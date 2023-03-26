@@ -1,0 +1,166 @@
+/* ********** PAGE ********* */
+body {
+    background: url("https://wallpaper.dog/large/5549638.jpg") fixed;
+    color: white;
+    text-align: center;
+    font-family: verdana, sans-serif;
+    text-shadow: 1px 1px 3px black, -1px -1px 3px black, 1px -1px 3px black, -1px 1px 3px black;
+    display: flex;
+}
+
+.blocPage {
+    width: 80%;
+    margin: auto;
+}
+
+/* ********** TEXTES ********** */
+
+h1 {
+    font-size: 5em;
+    margin: 20px;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.ratingText {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.normalParagraph {
+    font-size: 1.1em;
+    text-align: left;
+}
+
+/* ********** NIVEAUX ********** */
+
+.level {
+    border: 3px solid black;
+    border-radius: 30px;
+    margin: 40px auto;
+    width: 50%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.35s ease-in-out;
+    align-items: center;
+}
+
+.level:hover {
+    cursor: pointer;
+}
+
+.textLevel {
+    font-size: 2.6em;
+    margin-bottom: 10px;
+}
+
+.difficultyLevel {
+    font-size: 1.1em;
+}
+
+.separation {
+    width: 2px;
+    height: 80%;
+    background-color: black;
+}
+
+.attemptsNumber {
+    font-size: 1.1em;
+}
+
+.locked {
+    background-color: gray;
+}
+
+.locked:hover {
+    transform: scale(1.05);
+}
+
+#unlocked1 {
+    background-color: green;
+}
+
+#unlocked2 {
+    background-color: blue;
+}
+
+#unlocked3 {
+    background-color: yellowgreen;
+}
+
+#unlocked4 {
+    background-color: orange;
+}
+
+#unlocked5 {
+    background-color: orangered;
+}
+
+#unlocked6 {
+    background-color: red;
+}
+
+.unlocked:hover {
+    box-shadow: white 0 0 30px;
+    transform: scale(1.1);
+}
+
+.hidden {
+    display: none;
+}
+
+.winner {
+    color: goldenrod;
+}
+
+/* ********** BOUTONS ********** */
+
+.normalButton {
+    width: 15%;
+    height: 50px;
+    font-size: 2em;
+    border-radius: 10px;
+}
+
+.trueButton {
+    width: 70%;
+    height: 200px;
+    font-size: 5em;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+button {
+    margin: 10px;
+    transition: 0.35s ease-in-out;
+    background-color: #1d3557;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* ********** AUTRE ********** */
+
+img {
+    width: 10%;
+}
+
+hr {
+    margin: 100px;
+}
+
+hr:last-child {
+    margin: 20px 100px 20px 100px;
+}

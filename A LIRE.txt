@@ -1,0 +1,2 @@
+Cliquez sur "Guess My Number.html" pour lancer le jeu.
+ATTENTION ! Vous devez décompresser le dossier racine pour que le jeu fonctionne.
