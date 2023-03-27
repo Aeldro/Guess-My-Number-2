@@ -12,7 +12,7 @@ const locked = () => {
     alert("Vous n'avez pas encore débloqué ce niveau.")
 }
 
-// ********** "GUESS MY NUMBER 2.0" GAME **********
+// ********** "GUESS MY NUMBER 2" GAME **********
 
 const attemptsGrid = [];
 

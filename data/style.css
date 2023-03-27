@@ -1,43 +1,70 @@
 /* ********** PAGE ********* */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background: url("https://wallpaper.dog/large/5549638.jpg") fixed;
     color: white;
-    text-align: center;
     font-family: verdana, sans-serif;
     text-shadow: 1px 1px 3px black, -1px -1px 3px black, 1px -1px 3px black, -1px 1px 3px black;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .blocPage {
     width: 80%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
 }
 
 /* ********** TEXTES ********** */
 
 h1 {
-    font-size: 5em;
+    font-size: 5rem;
     margin: 20px;
+    text-align: center;
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 3rem;
+    text-align: center;
 }
 
 p {
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 
 .ratingText {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: bold;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
 .normalParagraph {
-    font-size: 1.1em;
+    font-size: 1.1rem;
     text-align: left;
 }
 
@@ -46,7 +73,7 @@ p {
 .level {
     border: 3px solid black;
     border-radius: 30px;
-    margin: 40px auto;
+    margin: 1rem auto;
     width: 50%;
     height: 100px;
     display: flex;
@@ -55,27 +82,34 @@ p {
     align-items: center;
 }
 
+.level {
+    display: flex;
+    justify-content: space-around;
+}
+
+.level div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .level:hover {
     cursor: pointer;
 }
 
 .textLevel {
-    font-size: 2.6em;
+    font-size: 2.6rem;
     margin-bottom: 10px;
 }
 
-.difficultyLevel {
-    font-size: 1.1em;
+.secondary-p {
+    font-size: 1.1rem;
 }
 
 .separation {
     width: 2px;
     height: 80%;
     background-color: black;
-}
-
-.attemptsNumber {
-    font-size: 1.1em;
 }
 
 .locked {
@@ -128,14 +162,14 @@ p {
 .normalButton {
     width: 15%;
     height: 50px;
-    font-size: 2em;
+    font-size: 2rem;
     border-radius: 10px;
 }
 
 .trueButton {
     width: 70%;
     height: 200px;
-    font-size: 5em;
+    font-size: 5rem;
     font-weight: bold;
     border-radius: 15px;
 }
@@ -163,4 +197,40 @@ hr {
 
 hr:last-child {
     margin: 20px 100px 20px 100px;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1050px) {
+
+    main {
+        width: 100%;
+    }
+
+    .level {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .textLevel {
+        font-size: 2rem;
+    }
+    
+    .secondary-p {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .textLevel {
+        font-size: 1.5rem;
+    }
 }

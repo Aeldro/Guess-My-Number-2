@@ -12,12 +12,11 @@
 </head>
 
 <body>
-    <div class="blocPage">
+    <!-- <div class="blocPage"> -->
         <header>
             <h1>Guess My Number 2</h1>
             <h3>(développé par Aeldro)</h3>
         </header>
-        <hr>
         <main>
             <h2 class="winnerText hidden">Félicitations ! Vous avez terminé tous les niveaux !</h2>
             <img class="winnerImg hidden" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Gold_Cup_icon.svg/1200px-Gold_Cup_icon.svg.png" alt="">
@@ -26,80 +25,80 @@
             <div id="unlocked1" class="level unlocked" onclick="newGame(10)">
                 <div>
                     <p class="textLevel">Niveau 1</p>
-                    <p class="difficultyLevel">Entre 1 et 10</p>
+                    <p class="secondary-p">Entre 1 et 10</p>
                 </div>
-                <div id="separation1" class="separation hidden"></div>
-                <p id="attemptsNumber1" class="attemptsNumber hidden"></p>
+                <span id="separation1" class="separation hidden"></span>
+                <p id="attemptsNumber1" class="secondary-p hidden"></p>
             </div>
             <div id="locked2" class="level locked" onclick="locked()">
                 <div>
                     <p class="textLevel">Niveau 2</p>
-                    <p class="difficultyLevel">Entre 1 et 100</p>
+                    <p class="secondary-p">Entre 1 et 100</p>
                 </div>
             </div>
             <div id="unlocked2" class="level unlocked hidden" onclick="newGame(100)">
                 <div>
                     <p class="textLevel">Niveau 2</p>
-                    <p class="difficultyLevel">Entre 1 et 100</p>
+                    <p class="secondary-p">Entre 1 et 100</p>
                 </div>
-                <div id="separation2" class="separation hidden"></div>
-                <p id="attemptsNumber2" class="attemptsNumber hidden"></p>
+                <span id="separation2" class="separation hidden"></span>
+                <p id="attemptsNumber2" class="secondary-p hidden"></p>
             </div>
             <div id="locked3" class="level locked" onclick="locked()">
                 <div>
                     <p class="textLevel">Niveau 3</p>
-                    <p class="difficultyLevel">Entre 1 et 1 000</p>
+                    <p class="">Entre 1 et 1 000</p>
                 </div>
             </div>
             <div id="unlocked3" class="level unlocked hidden" onclick="newGame(1000)">
                 <div>
                     <p class="textLevel">Niveau 3</p>
-                    <p class="difficultyLevel">Entre 1 et 1 000</p>
+                    <p class="secondary-p">Entre 1 et 1 000</p>
                 </div>
-                <div id="separation3" class="separation hidden"></div>
+                <span id="separation3" class="separation hidden"></span>
                 <p id="attemptsNumber3" class="attemptsNumber hidden"></p>
             </div>
             <div id="locked4" class="level locked" onclick="locked()">
                 <div>
                     <p class="textLevel">Niveau 4</p>
-                    <p class="difficultyLevel">Entre 1 et 10 000</p>
+                    <p class="secondary-p">Entre 1 et 10 000</p>
                 </div>
             </div>
             <div id="unlocked4" class="level unlocked hidden" onclick="newGame(10000)">
                 <div>
                     <p class="textLevel">Niveau 4</p>
-                    <p class="difficultyLevel">Entre 1 et 10 000</p>
+                    <p class="secondary-p">Entre 1 et 10 000</p>
                 </div>
-                <div id="separation4" class="separation hidden"></div>
-                <p id="attemptsNumber4" class="attemptsNumber hidden"></p>
+                <span id="separation4" class="separation hidden"></span>
+                <p id="attemptsNumber4" class="secondary-p hidden"></p>
             </div>
             <div id="locked5" class="level locked" onclick="locked()">
                 <div>
                     <p class="textLevel">Niveau 5</p>
-                    <p class="difficultyLevel">Entre 1 et 100 000</p>
+                    <p class="secondary-p">Entre 1 et 100 000</p>
                 </div>
             </div>
             <div id="unlocked5" class="level unlocked hidden" onclick="newGame(100000)">
                 <div>
                     <p class="textLevel">Niveau 5</p>
-                    <p class="difficultyLevel">Entre 1 et 100 000</p>
+                    <p class="secondary-p">Entre 1 et 100 000</p>
                 </div>
-                <div id="separation5" class="separation hidden"></div>
-                <p id="attemptsNumber5" class="attemptsNumber hidden"></p>
+                <span id="separation5" class="separation hidden"></span>
+                <p id="attemptsNumber5" class="secondary-p hidden"></p>
             </div>
             <div id="locked6" class="level locked" onclick="locked()">
                 <div>
                     <p class="textLevel">Niveau 6</p>
-                    <p class="difficultyLevel">Entre 1 et 1 000 000</p>
+                    <p class="secondary-p">Entre 1 et 1 000 000</p>
                 </div>
             </div>
             <div id="unlocked6" class="level unlocked hidden" onclick="newGame(1000000)">
                 <div>
                     <p class="textLevel">Niveau 6</p>
-                    <p class="difficultyLevel">Entre 1 et 1 000 000</p>
+                    <p class="secondary-p">Entre 1 et 1 000 000</p>
                 </div>
                 <div id="separation6" class="separation hidden"></div>
-                <p id="attemptsNumber6" class="attemptsNumber hidden"></p>
+                <p id="attemptsNumber6" class="secondary-p hidden"></p>
             </div>
 
         </main>
@@ -129,7 +128,7 @@
             <p>© 2021 Aeldro</p>
             <hr>
         </footer>
-    </div>
+    <!-- </div> -->
 
     <script src="data/script.js"></script>
 </body>
