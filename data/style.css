@@ -29,6 +29,14 @@ main {
     width: 90%;
 }
 
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #404040;
+    padding: 0.8rem;
+    margin-top: 2rem;
+}
+
 /* ********** TEXTES ********** */
 
 h1 {
@@ -48,18 +56,6 @@ h3 {
     text-align: center;
 }
 
-/* .ratingText {
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.normalParagraph {
-    font-size: 1.1rem;
-    text-align: left;
-} */
-
 /* ********** NIVEAUX ********** */
 
 .level {
@@ -72,11 +68,7 @@ h3 {
     justify-content: space-around;
     transition: 0.35s ease-in-out;
     align-items: center;
-}
-
-.level {
-    display: flex;
-    justify-content: space-around;
+    padding: 0.5rem;
 }
 
 .level div {
@@ -90,17 +82,7 @@ h3 {
 }
 
 .textLevel {
-    font-size: 2.6rem;
-}
-
-.secondary-p {
-    font-size: 1.1rem;
-}
-
-.separation {
-    width: 2px;
-    height: 1rem;
-    background-color: black;
+    font-size: 2rem;
 }
 
 .locked {
@@ -140,10 +122,6 @@ h3 {
     transform: scale(1.1);
 }
 
-.hidden {
-    display: none;
-}
-
 .winner {
     color: goldenrod;
 }
@@ -179,7 +157,7 @@ button:hover {
 /* ********** AUTRE ********** */
 
 img {
-    width: 10%;
+    width: 20%;
 }
 
 hr {
@@ -188,18 +166,9 @@ hr {
 }
 
 hr.separation {
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
+    margin: 0.5rem;
 }
 
-hr:last-child {
-    margin: 20px 100px 20px 100px;
-}
-
-aside {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.hidden {
+    display: none;
 }
