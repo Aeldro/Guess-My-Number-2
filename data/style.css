@@ -63,6 +63,7 @@ h3 {
     border-radius: 30px;
     margin: 1rem auto;
     width: 90%;
+    max-width: 700px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -167,6 +168,26 @@ hr {
 
 hr.separation {
     margin: 0.5rem;
+}
+
+@media screen and (min-width: 700px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    hr {
+        margin: 4rem auto;
+    }
+
+    .level {
+        flex-direction: row;
+        height: 6rem;
+    }
+
+    hr.separation {
+        width: auto;
+        height: 80%;
+    }
 }
 
 .hidden {
