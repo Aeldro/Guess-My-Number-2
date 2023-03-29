@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -15,15 +16,6 @@ body {
     flex-direction: column;
 }
 
-.blocPage {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 header {
     display: flex;
     flex-direction: column;
@@ -34,38 +26,34 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
+    width: 90%;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #404040;
+    padding: 0.8rem;
+    margin-top: 2rem;
 }
 
 /* ********** TEXTES ********** */
 
 h1 {
-    font-size: 5rem;
-    margin: 20px;
+    font-size: 1.8rem;
     text-align: center;
+    margin-top: 2rem;
 }
 
 h2 {
-    font-size: 3rem;
-    text-align: center;
-}
-
-p {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-.ratingText {
     font-size: 1.5rem;
-    font-weight: bold;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
-.normalParagraph {
+h3 {
     font-size: 1.1rem;
-    text-align: left;
+    text-align: center;
 }
 
 /* ********** NIVEAUX ********** */
@@ -74,17 +62,14 @@ p {
     border: 3px solid black;
     border-radius: 30px;
     margin: 1rem auto;
-    width: 50%;
-    height: 100px;
+    width: 90%;
+    max-width: 700px;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     transition: 0.35s ease-in-out;
     align-items: center;
-}
-
-.level {
-    display: flex;
-    justify-content: space-around;
+    padding: 0.5rem;
 }
 
 .level div {
@@ -98,18 +83,7 @@ p {
 }
 
 .textLevel {
-    font-size: 2.6rem;
-    margin-bottom: 10px;
-}
-
-.secondary-p {
-    font-size: 1.1rem;
-}
-
-.separation {
-    width: 2px;
-    height: 80%;
-    background-color: black;
+    font-size: 2rem;
 }
 
 .locked {
@@ -149,10 +123,6 @@ p {
     transform: scale(1.1);
 }
 
-.hidden {
-    display: none;
-}
-
 .winner {
     color: goldenrod;
 }
@@ -188,49 +158,38 @@ button:hover {
 /* ********** AUTRE ********** */
 
 img {
-    width: 10%;
+    width: 20%;
 }
 
 hr {
-    margin: 100px;
+    width: 80%;
+    margin: 2rem;
 }
 
-hr:last-child {
-    margin: 20px 100px 20px 100px;
+hr.separation {
+    margin: 0.5rem;
 }
 
-aside {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+@media screen and (min-width: 700px) {
+    h1 {
+        font-size: 3rem;
+    }
 
-@media screen and (max-width: 1050px) {
-
-    main {
-        width: 100%;
+    hr {
+        margin: 4rem auto;
     }
 
     .level {
-        width: 80%;
+        flex-direction: row;
+        height: 6rem;
     }
 
+    hr.separation {
+        width: auto;
+        height: 80%;
+    }
 }
 
-@media screen and (max-width: 700px) {
-    .textLevel {
-        font-size: 2rem;
-    }
-    
-    .secondary-p {
-        font-size: 0.8rem;
-    }
-
-}
-
-@media screen and (max-width: 400px) {
-    .textLevel {
-        font-size: 1.5rem;
-    }
+.hidden {
+    display: none;
 }
