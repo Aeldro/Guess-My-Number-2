@@ -6,7 +6,7 @@
 }
 
 body {
-    background: url("https://wallpaper.dog/large/5549638.jpg") fixed;
+    background: url("../assets/bg.jpg") fixed;
     color: white;
     font-family: verdana, sans-serif;
     text-shadow: 1px 1px 3px black, -1px -1px 3px black, 1px -1px 3px black, -1px 1px 3px black;
